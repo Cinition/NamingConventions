@@ -1,0 +1,21 @@
+:root {
+    --PrimaryHue--: #bb1c44;
+    --navbar--: #303030;
+    --background--:#242424;
+    --text--:#DADADA;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url(../CSS/Quicksand_Book.otf);
+}
+
+html {
+    background-color: #242424;
+    font-family: 'Quicksand';
+    color: #DADADA;
+}
+
+body {
+    width: 60%;
+}
