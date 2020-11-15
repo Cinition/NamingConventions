@@ -11,11 +11,116 @@
 }
 
 html {
-    background-color: #242424;
     font-family: 'Quicksand';
     color: #DADADA;
 }
 
 body {
-    width: 60%;
+    background-color: #242424;
+    padding: 0;
+    margin: 0;
+}
+
+.Logo {
+    box-sizing: border-box;
+    position: fixed;
+    width: 5vw;
+    height: 5vw;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    background-color: var(--navbar--);
+    border-bottom-right-radius: 25px;
+}
+
+.Title {
+    width: 21cm;
+    margin: 25px auto 0;
+    text-align: center;
+}
+
+.Title #Title {
+    font-size: 1.5cm;
+    margin: 0;
+    color: #bb1c44;
+}
+
+.Title a{
+    color: #DADADA;
+}
+
+.Title a:hover{
+    color: var(--PrimaryHue--);
+}
+
+.TableOfContent {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 7cm;
+    padding: 25px;
+    position: fixed;
+    left: calc(50vw + 10.5cm + 25px);
+    background-color: var(--navbar--);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.TableOfContent h2 {
+    margin: 0 0 10px 0;
+    color: var(--PrimaryHue--);
+}
+
+.TableOfContent .Content {
+    margin: 0 0 5px 6px;
+    cursor: pointer;
+}
+
+.TableOfContent p::before {
+    position: relative;
+    content: ">";
+    left: -5px;
+}
+
+.TableOfContent .Indent1 {
+    margin-left: 21px;
+}
+
+.TableOfContent .Indent2 {
+    margin-left: 36px;
+}
+
+.Page {
+    box-sizing: border-box;
+    width: 21cm;
+    padding: 25px;
+    margin: 0 auto 5vh;
+    border-radius: 25px;
+    background-color: #303030;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.Page .Paragraph{
+    margin-bottom: 25px;
+}
+
+.Page .h1{
+    font-size: 40px;
+    color: var(--PrimaryHue--);
+    margin: 0;
+    text-align: center;
+}
+
+.Page .h2{
+    font-size: 32.5px;
+    color: var(--PrimaryHue--);
+    margin: 0;
+    text-align: center;
+}
+
+.Page .h3{
+    font-size: 25px;
+    color: var(--PrimaryHue--);
+    margin: 0;
+    text-align: center;
 }
