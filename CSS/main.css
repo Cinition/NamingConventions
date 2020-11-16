@@ -148,7 +148,7 @@ body {
     font-size: 25px;
     color: var(--PrimaryHue--);
     margin: 0 0 15px;
-    text-align: center;
+    text-align: left;
 }
 
 .Divide {
@@ -186,4 +186,16 @@ body {
     margin: 0 15%;
     border-radius: 25px;
     background-color: var(--image--);
+}
+
+.SwitchCases {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.SwitchCases div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
