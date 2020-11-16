@@ -4,7 +4,7 @@
 
         <head>
             <meta content="width=device-width, initial-scale=1" name="viewport" />
-            <link rel="shortcut icon" type="image/png" href="CSS/Logo.svg"/>
+            <link rel="shortcut icon" type="image/png" href="IMG/Logo.svg"/>
             <link rel="stylesheet" type="text/css" href="CSS/main.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <link rel="stylesheet" href="FontAwesome/css/all.css">
@@ -12,7 +12,9 @@
 
         <body>
 
-            <div class="Logo" ><a href="https://portal.playgroundsquad.com/studenter/cornee-nieuwenhuis/"><img src="CSS/Logo.svg"></a></div>
+            <div class="Logo" >
+                <a href="https://portal.playgroundsquad.com/studenter/cornee-nieuwenhuis/"><img src="IMG/Logo.svg"></a>
+            </div>
 
             <div class="Title">
                 <p id="Title">Naming Conventions</p>
@@ -23,29 +25,30 @@
                 <p class="Content">Introduction</p>
                 <p class="Content">Project Structure</p>
                 <p class="Content">Naming Conventions</p>
-                    <p class="Indent1 Content">Folder naming</p>
-                    <p class="Indent1 Content">File naming</p>
-                        <p class="Indent2 Content">Texture naming</p>
-                        <p class="Indent2 Content">Model naming</p>
-                        <p class="Indent2 Content">Sound naming</p>
+                    <p class="Indent1 Content">Folder Naming</p>
+                    <p class="Indent1 Content">File Naming</p>
+                        <p class="Indent2 Content">Animation Naming</p>
+                        <p class="Indent2 Content">Model Naming</p>
+                        <p class="Indent2 Content">Sound Naming</p>
+                        <p class="Indent2 Content">Texture Naming</p>
                 <p class="Content">Code Conventions</p>
                     <p class="Indent1 Content">Style guide</p>
-                        <p class="Indent2 Content">Variables</p>
-                        <p class="Indent2 Content">Methods</p>
-                        <p class="Indent2 Content">Classes</p>
-                        <p class="Indent2 Content">Structs</p>
-                        <p class="Indent2 Content">Enumerators</p>
-                        <p class="Indent2 Content">Events</p>
+                        <p id="Style" class="Indent2 Content">Variables</p>
+                        <p id="Style" class="Indent2 Content">Methods</p>
+                        <p id="Style" class="Indent2 Content">Classes</p>
+                        <p id="Style" class="Indent2 Content">Structs</p>
+                        <p id="Style" class="Indent2 Content">Enumerators</p>
+                        <p id="Style" class="Indent2 Content">Events</p>
                     <p class="Indent1 Content">Best Practises</p>
-                        <p class="Indent2 Content">Switch cases</p>
-                        <p class="Indent2 Content">Curly brackets</p>
+                        <p class="Indent2 Content">Switch Cases</p>
+                        <p class="Indent2 Content">Curly Brackets</p>
                     <p class="Indent1 Content">Commenting</p>
-                        <p class="Indent2 Content">Variables</p>
-                        <p class="Indent2 Content">Methods</p>
-                        <p class="Indent2 Content">Classes</p>
-                        <p class="Indent2 Content">Structs</p>
-                        <p class="Indent2 Content">Enumerators</p>
-                        <p class="Indent2 Content">Events</p>
+                        <p id="Commenting" class="Indent2 Content">Variables</p>
+                        <p id="Commenting" class="Indent2 Content">Methods</p>
+                        <p id="Commenting" class="Indent2 Content">Classes</p>
+                        <p id="Commenting" class="Indent2 Content">Structs</p>
+                        <p id="Commenting" class="Indent2 Content">Enumerators</p>
+                        <p id="Commenting" class="Indent2 Content">Events</p>
             </div>
 
             <div id="Download" class="Downloads">
@@ -67,11 +70,122 @@
                 <div id="ProjectStructure" class="Paragraph">
                     <p class="h1">Project Structure</p>
 
-                    <p>On the right here is the project structure that we will uphold through out the entire project. Our structure is based upon the structure of Tension because of our usage of their in-house game engine TenGine.</p>
-                    <p>To maintain the same structure throughout the project and computers we will be making use of GitLab for our source control. With this tool we'll also be able to work at the same time on the same folder with minimal issues.</p>
-                    <p>There are only 2 folders that are important to you. "Art" and "Code" folders. For the Artist only the "Art" folder will be important while the programmers will make use of both.</p>
-                    <p>The "Art" folder is divided into more folder to clerify what the asset is, from "Animation" to "Models" and also "Textures", The file naming in these folders will be discussed in <a class="Reference Content">File Naming</a> </p>
+                    <div class="Divide">
+                        <div class="Text">
+                            <p>
+                                On the right here is the project structure that we will uphold through out the entire project. Our structure is based upon the structure of Tension because of our usage of their in-house game engine TenGine.
+                            </p>
+                            <p>
+                                To maintain the same structure throughout the project and computers we will be making use of GitLab for our source control. With this tool we'll also be able to work at the same time on the same folder with minimal issues. Because of so called source control we will never have to create a new folder on every version as source control intergrates version histories of all the changes applied to the folder or how it is called in GitLab a "Repository".
+                            </p>
+                            <p>
+                                There are only 2 folders that are important to you. "Art" and "Code" folders. For the Artist only the "Art" folder will be important while the programmers will make use of both.
+                            </p>
+                            <p>
+                                The "Art" folder is divided into more folder to clerify what the asset is, from "Animation" to "Models" and also "Textures", The file naming of these files with the respective folder will be further discussed in <a class="Reference Content">File Naming</a>.
+                            </p>
+                            <p>
+                                The "Code" folder is where are the code is for our game, and like the "Art" folder it is divided into subfolders to further categorise what kind of code it is for the game. The code in these folders like the "Art" have a specific naming convention, but differ in where these conventions apply. The <a class="Reference Content">Code Conventions</a> specifiy to the programmer how to name certain "Variables" or "Classes", and the file names are derived from the class they include in their text.
+                            </p>
+                            <p>
+                                The "Code" folder is where are the code is for our game, and like the "Art" folder it is divided into subfolders to further categorise what kind of code it is for the game. The code in these folders like the "Art" have a specific naming convention, but differ in where these conventions apply. The <a class="Reference Content">Code Conventions</a> specifiy to the programmer how to name certain "Variables" or "Classes", and the file names are derived from the class they include in their text.
+                            </p>
+                        </div>
+                        <div class="Img">
+                            <img src="IMG/Structure.png">
+                        </div>
+                    </div>
                 </div>
+
+                <div id="NamingConventions" class="Paragraph">
+                    
+                    <p class="h1">Naming Convention</p>
+
+                    <p>
+                        In this paragraph you will find our standard for file and folder naming, ofcourse examples included.
+                    </p>
+
+                    <p id="FolderNaming" class="h2">Folder Naming</p>
+
+                    <p>
+                        The reason for creating new folders is to make the a folder more organised, by organised that means that the different files of a character will be in a character folder, and everything for the environment will be in a environment folder. The follow could be said folders. <br><br>
+                        - Characters<br>
+                        - Environments<br>
+                        - World Sections<br>
+                    </p>
+                    <p>
+                        If a new folder has to be created, follow these rules to follow the folder naming convention.
+                    </p>
+
+                    <img class="Example" src="IMG/FolderNaming.png">
+
+                    <p>
+                        Some examples of correct usage with this name convention:
+                    </p>
+
+                    <img class="Example" src="IMG/FolderNamingExamples.png">
+
+                    <p id="FileNaming" class="h2">File Naming</p>
+
+                    <p>
+                        When you create a new file in our project, then follow these file naming conventions.
+                    </p>
+
+                    <img class="Example" src="IMG/FileNaming.png">
+
+                    <p>
+                        Some examples of correct usage with this name convention:
+                    </p>
+                    
+                    <img class="Example" src="IMG/FileNamingExamples.png">
+                
+                </div>
+
+                <div id="CodeConventions">
+
+                    <p class="h1">Code Conventions</p> 
+
+                    <p>
+                        This paragraph is all about how the coding will look like and how every "Variable" to "Class" will be named in our project. It also includes some best practises to optimise the coding.
+                    </p>
+
+                    <p id="StyleGuide" class="h2">Style Guide</p>
+
+                    <p>
+                        Style Guide is about the naming convention used for "Variables", "Methods", "Classes" etc.  
+                    </p>
+
+                    <p id="StyleVariables" class="h3">Variables</p>
+                    <p id="StyleMethods" class="h3">Methods</p>
+                    <p id="StyleClass" class="h3">Class</p>
+                    <p id="StyleStructs" class="h3">Structs</p>
+                    <p id="StyleEnumerators" class="h3">Enumerators</p>
+                    <p id="StyleEvents" class="h3">Events</p>
+
+                    <p id="BestPractises" class="h2">Best Practises</p>
+
+                    <p>
+                        Best Practises showcases some optmises and overall cleannes in code that we will make use of.
+                    </p>
+
+                    <p id="SwitchCases" class="h3">Switch Cases</p>
+                    <p id="CurlyBrackets" class="h3">Curly Brackets</p>
+
+                    <p id="Commenting" class="h2">Commenting</p>
+
+                    <p>
+                        Commenting shows how we are gonna comment our code.
+                    </p>
+
+                    <p id="CommentingVariables" class="h3">Variables</p>
+                    <p id="CommentingMethods" class="h3">Methods</p>
+                    <p id="CommentingClass" class="h3">Class</p>
+                    <p id="CommentingStructs" class="h3">Structs</p>
+                    <p id="CommentingEnumerators" class="h3">Enumerators</p>
+                    <p id="CommentingEvents" class="h3">Events</p>
+
+                </div>
+
             </div>
 
         </body>
@@ -86,10 +200,10 @@
         <script>
             $(document).ready(function (){
                 $(".Content").click(function() {
-                    var Target = "#" + this.innerHTML;
+                    var Target = "#" + this.id + this.innerHTML;
                     Target = Target.replace(/\s/g, '');
                     $([document.documentElement, document.body]).animate({
-                        scrollTop: $(Target).offset().top
+                        scrollTop: $(Target).offset().top - window.innerHeight / 2
                     }, 1000);
                 });
             });

@@ -2,6 +2,7 @@
     --PrimaryHue--: #bb1c44;
     --navbar--: #303030;
     --background--:#242424;
+    --image--: #191919;
     --text--:#DADADA;
 }
 
@@ -31,6 +32,7 @@ body {
     left: 0;
     background-color: var(--navbar--);
     border-bottom-right-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .Title {
@@ -125,28 +127,50 @@ body {
 }
 
 .Page .Paragraph{
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
 .Page .h1{
     font-size: 40px;
     color: var(--PrimaryHue--);
-    margin: 0;
+    margin: 0 0 15px;
     text-align: center;
 }
 
 .Page .h2{
-    font-size: 32.5px;
+    font-size: 30px;
     color: var(--PrimaryHue--);
-    margin: 0;
+    margin: 0 0 15px;
     text-align: center;
 }
 
 .Page .h3{
     font-size: 25px;
     color: var(--PrimaryHue--);
-    margin: 0;
+    margin: 0 0 15px;
     text-align: center;
+}
+
+.Divide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Divide .Text{
+    width: 57%;
+    text-align: justify;
+}
+
+.Divide .Img {
+    width: 40%;
+    margin: auto 0;
+}
+
+.Divide img {
+    width: 100%;
+    border-radius: 25px;
+    background-color: var(--image--);
 }
 
 .Reference {
@@ -155,4 +179,11 @@ body {
 
 .Reference:hover {
     cursor: pointer;
+}
+
+.Example {
+    width: 70%;
+    margin: 0 15%;
+    border-radius: 25px;
+    background-color: var(--image--);
 }
