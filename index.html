@@ -15,7 +15,7 @@
 
             <div class="Title">
                 <p id="Title">Naming Conventions</p>
-                <p id="Subtitle">Made by <a href="http://www.corneen.nl">Cornee Nieuwenhuis</a></p>
+                <p id="Subtitle">Made by <a href="https://portal.playgroundsquad.com/studenter/cornee-nieuwenhuis/">Cornee Nieuwenhuis</a></p>
             </div>
 
             <div class="TableOfContent">
@@ -58,7 +58,7 @@
                     <p class="Text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 </div>
     
-                <div id="Project Structure" class="Paragraph">
+                <div id="ProjectStructure" class="Paragraph">
                     <p class="h1">Introduction</p>
 
                     <p class="Text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -68,5 +68,17 @@
             </div>
 
         </body>
+
+        <script>
+            $(document).ready(function (){
+                $(".Content").click(function() {
+                    var Target = "#" + this.innerHTML;
+                    Target = Target.replace(/\s/g, '');
+                    $([document.documentElement, document.body]).animate({
+                        scrollTop: $(Target).offset().top
+                    }, 1000);
+                });
+            });
+        </script>
 
     </html>
