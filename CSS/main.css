@@ -35,7 +35,7 @@ body {
 
 .Title {
     width: 21cm;
-    margin: 25px auto 0;
+    margin: 25px auto 25px;
     text-align: center;
 }
 
@@ -53,6 +53,30 @@ body {
     color: var(--PrimaryHue--);
 }
 
+.Downloads {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 7cm;
+    padding: 15px;
+    position: fixed;
+    left: calc(50vw + 10.5cm + 15px);
+    background-color: var(--navbar--);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    justify-content: space-around;
+}
+
+.Downloads i {
+    color: var(--text--);
+    font-size: 40px;
+}
+
+.Downloads i:hover {
+    cursor: pointer;
+    text-shadow:  2.5px 2.5px 0 var(--PrimaryHue--);
+}
+
 .TableOfContent {
     box-sizing: border-box;
     display: flex;
@@ -60,7 +84,7 @@ body {
     width: 7cm;
     padding: 25px;
     position: fixed;
-    left: calc(50vw + 10.5cm + 25px);
+    left: calc(50vw + 10.5cm + 15px);
     background-color: var(--navbar--);
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -123,4 +147,12 @@ body {
     color: var(--PrimaryHue--);
     margin: 0;
     text-align: center;
+}
+
+.Reference {
+    text-decoration: underline;
+}
+
+.Reference:hover {
+    cursor: pointer;
 }

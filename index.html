@@ -7,18 +7,18 @@
             <link rel="shortcut icon" type="image/png" href="CSS/Logo.svg"/>
             <link rel="stylesheet" type="text/css" href="CSS/main.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <link rel="stylesheet" href="FontAwesome/css/all.css">
         </head>
 
         <body>
 
-            <div class="Logo" ><a href="http://www.corneen.nl"><img src="CSS/Logo.svg"></a></div>
+            <div class="Logo" ><a href="https://portal.playgroundsquad.com/studenter/cornee-nieuwenhuis/"><img src="CSS/Logo.svg"></a></div>
 
             <div class="Title">
                 <p id="Title">Naming Conventions</p>
-                <p id="Subtitle">Made by <a href="https://portal.playgroundsquad.com/studenter/cornee-nieuwenhuis/">Cornee Nieuwenhuis</a></p>
             </div>
 
-            <div class="TableOfContent">
+            <div id="TOC" class="TableOfContent">
                 <h2>Table of content</h2>
                 <p class="Content">Introduction</p>
                 <p class="Content">Project Structure</p>
@@ -48,26 +48,40 @@
                         <p class="Indent2 Content">Events</p>
             </div>
 
+            <div id="Download" class="Downloads">
+                <a href="Downloads/TenGine_4.1.chm" download><i class="far fa-file-code"></i></a>
+                <a href="Downloads/TenGineUserGuide.pdf" download target="_blank"><i class="far fa-file-pdf"></i></a>
+            </div>
+
             <div class="Page">
 
                 <div id="Introduction" class="Paragraph">
                     <p class="h1">Introduction</p>
-    
-                    <p class="Text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <p class="Text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <p class="Text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    
+                    <p>Welcome to the Naming convention of our project <b>Aquatic Secrets</b>.</p>
+
+                    <p>This document can be seen as a guide line to follow, what i mean by that is that this is more to find the example of the naming you are trying to find, and not a file you read through once just to be over with it.</p>
+                    <p>In this document you can find the naming conventions for texture naming, model naming or how they are called in this document "files". Further down you can see example on what the correct way of naming and best practises for programming in this project.</p>
                 </div>
     
                 <div id="ProjectStructure" class="Paragraph">
-                    <p class="h1">Introduction</p>
+                    <p class="h1">Project Structure</p>
 
-                    <p class="Text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <p class="Text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <p class="Text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>On the right here is the project structure that we will uphold through out the entire project. Our structure is based upon the structure of Tension because of our usage of their in-house game engine TenGine.</p>
+                    <p>To maintain the same structure throughout the project and computers we will be making use of GitLab for our source control. With this tool we'll also be able to work at the same time on the same folder with minimal issues.</p>
+                    <p>There are only 2 folders that are important to you. "Art" and "Code" folders. For the Artist only the "Art" folder will be important while the programmers will make use of both.</p>
+                    <p>The "Art" folder is divided into more folder to clerify what the asset is, from "Animation" to "Models" and also "Textures", The file naming in these folders will be discussed in <a class="Reference Content">File Naming</a> </p>
                 </div>
             </div>
 
         </body>
+
+        <script>
+            $(document).ready(function (){
+                var HeightOffest = $("#TOC").outerHeight() + 135;
+                $("#Download").css({top: HeightOffest});
+            });
+        </script>
 
         <script>
             $(document).ready(function (){
